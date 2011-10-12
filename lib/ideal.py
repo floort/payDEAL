@@ -8,7 +8,9 @@
 # desc:		The main module file for payDEAL
 
 import pprint, random
-import base64, sha, md5
+import base64
+from hashlib import md5
+from hashlib import sha1 as sha
 import time, re, urllib2
 from AcquirerTransactionResponse import *
 from AcquirerStatusResponse import *
